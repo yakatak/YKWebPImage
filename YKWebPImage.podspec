@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = "https://twitter.com/yakatak"
   s.ios.deployment_target = '8.0'
   s.source                = { :git => "https://github.com/yakatak/YKWebPImage.git", :tag => "v0.0.1" }
-  s.source_files          = 'YKWebPImage/YKWebPImage'
+  s.source_files          = 'YKWebPImage/**/*.{m,h}'
   s.requires_arc          = true
   s.summary               = "Plug and Play WebP support for iOS"
   s.dependency 'libwebp', '0.4.3'
