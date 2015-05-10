@@ -1,2 +1,2 @@
 # YKWebPImage
-Adds "for-free" WebP Image support to iPhone
+Adds "for-free" WebP Image support to iOS
