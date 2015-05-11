@@ -15,7 +15,7 @@
 		74D62C251AF4CFA500D3F055 /* UIImage+YKWebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */; };
 		74D62C291AF65BE600D3F055 /* YKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C271AF65BE600D3F055 /* YKSwizzle.m */; };
 		74D62C2A1AF65BE600D3F055 /* YKSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D62C281AF65BE600D3F055 /* YKSwizzle.h */; };
-		CDD1EF9EA20A6A95E9EDE4AD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532F9ABA7FFD9265A96EBCA6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AD88754A06E2417AC833F37E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B123E7AA7D5EA32A412A116 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		532F9ABA7FFD9265A96EBCA6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B123E7AA7D5EA32A412A116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		745774FC1AFF623500416C44 /* TestImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestImages; path = ../../YKWebPImage/YKWebPImageTests/TestImages; sourceTree = "<group>"; };
 		74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B20C1AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD1EF9EA20A6A95E9EDE4AD /* Pods.framework in Frameworks */,
+				AD88754A06E2417AC833F37E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		5DB923A1E1CFF893FAB1189C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				532F9ABA7FFD9265A96EBCA6 /* Pods.framework */,
+				0B123E7AA7D5EA32A412A116 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 				74C2B2041AF024C200A4D4C2 /* Frameworks */,
 				74C2B2051AF024C200A4D4C2 /* Headers */,
 				74C2B2061AF024C200A4D4C2 /* Resources */,
-				CF4756838B21074958F3CB13 /* Embed Pods Frameworks */,
 				4AC8D933D7C2740C083A17B4 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -278,21 +277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CF4756838B21074958F3CB13 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

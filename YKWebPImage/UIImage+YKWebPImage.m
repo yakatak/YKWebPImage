@@ -21,7 +21,7 @@
 #import "UIImage+YKWebPImage.h"
 #import <objc/runtime.h>
 #import "YKSwizzle.h"
-#import "decode.h"
+#import <decode.h>
 
 static void releaseData(void *info, const void *data, size_t size) {
     if(info) {
