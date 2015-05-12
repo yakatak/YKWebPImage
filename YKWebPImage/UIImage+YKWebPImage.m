@@ -37,6 +37,7 @@ static void releaseData(void *info, const void *data, size_t size) {
 
 @implementation UIImage (YKWebpImage)
 
+#pragma mark Swizzling
 + (void)load {
     static dispatch_once_t token;
     dispatch_once(&token, ^{
@@ -57,8 +58,9 @@ static void releaseData(void *info, const void *data, size_t size) {
     });
 }
 
+#pragma mark Decoder
 + (UIImage *)webPImageFromData:(NSData *)data scale:(CGFloat)scale {
-    // At the moment, scale and traitCollection are ignored. A little bit of UIImage RE is needed to determine the right steps
+    // At the moment, traitCollections are ignored. We will add support for traitCollections... eventually :)
     
     // Nab the width and height from the data stream
     int width, height;
@@ -71,9 +73,9 @@ static void releaseData(void *info, const void *data, size_t size) {
     if (!WebPInitDecoderConfig(config)) {
         return nil;
     }
-    // TODO: possible place to deal with image scaling, but this would prevent UIKit from doing its thing
-    config->options.no_fancy_upsampling = 1;
+    
     config->options.bypass_filtering = 1;
+    config->options.no_fancy_upsampling = 1;
     config->options.use_threads = 1;
     config->output.colorspace = MODE_RGBA;
     
@@ -93,7 +95,7 @@ static void releaseData(void *info, const void *data, size_t size) {
     CGDataProviderRef provider = CGDataProviderCreateWithData(config, config->output.u.RGBA.rgba, width * height * 4, releaseData);
     CGColorRenderingIntent intent = kCGRenderingIntentDefault;
     CGImageRef cgImage = CGImageCreate(width, height, 8, 32, 4 * width, colorSpace, bitmapInfo, provider, NULL, YES, intent);
-    UIImage *image = [UIImage imageWithCGImage:cgImage scale:scale orientation:UIImageOrientationUp]; // TODO: might be another candidate for scale value
+    UIImage *image = [UIImage imageWithCGImage:cgImage scale:scale orientation:UIImageOrientationUp];
     
     CGImageRelease(cgImage);
     CGColorSpaceRelease(colorSpace);
@@ -102,6 +104,7 @@ static void releaseData(void *info, const void *data, size_t size) {
     return image;
 }
 
+#pragma mark Init Methods
 - (instancetype)initWithData_yk:(NSData *)data {
     UIImage *image = [UIImage webPImageFromData:data scale:1.0];
     if (image) {
@@ -140,7 +143,7 @@ compatibleWithTraitCollection:(UITraitCollection *)traitCollection {
     if (path) {
         NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:nil];
         if (data) {
-            UIImage *image = [UIImage webPImageFromData:data scale:1.0]; // TODO: later make use of the traitCollection
+            UIImage *image = [UIImage webPImageFromData:data scale:1.0];
             if (image) {
                 return image;
             }

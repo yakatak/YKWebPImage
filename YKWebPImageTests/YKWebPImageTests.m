@@ -128,7 +128,7 @@
     XCTAssertEqual(image.scale, 0.5);
 }
 
-#pragma mark [UIImage imageWithContentsOfFile:]
+#pragma mark [UIImage initWithContentsOfFile:]
 - (void)testInitWithContentsOfFileWEBP {
     UIImage *image = [[UIImage alloc] initWithContentsOfFile:self.webPFilePath];
     XCTAssertNotNil(image, @"image was not created for WEBP");

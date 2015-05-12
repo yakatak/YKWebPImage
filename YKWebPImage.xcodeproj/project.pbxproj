@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		745774FD1AFF623500416C44 /* TestImages in Resources */ = {isa = PBXBuildFile; fileRef = 745774FC1AFF623500416C44 /* TestImages */; };
-		74C2B20E1AF024C200A4D4C2 /* YKWebPImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C2B20D1AF024C200A4D4C2 /* YKWebPImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74C2B2141AF024C200A4D4C2 /* YKWebPImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */; };
 		74C2B21B1AF024C200A4D4C2 /* YKWebPImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2B21A1AF024C200A4D4C2 /* YKWebPImageTests.m */; };
 		74D62C241AF4CFA500D3F055 /* UIImage+YKWebPImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D62C221AF4CFA500D3F055 /* UIImage+YKWebPImage.h */; };
@@ -33,7 +32,6 @@
 		745774FC1AFF623500416C44 /* TestImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestImages; path = ../../YKWebPImage/YKWebPImageTests/TestImages; sourceTree = "<group>"; };
 		74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B20C1AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74C2B20D1AF024C200A4D4C2 /* YKWebPImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKWebPImage.h; sourceTree = "<group>"; };
 		74C2B2131AF024C200A4D4C2 /* YKWebPImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKWebPImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B2191AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C2B21A1AF024C200A4D4C2 /* YKWebPImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKWebPImageTests.m; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		74C2B20A1AF024C200A4D4C2 /* YKWebPImage */ = {
 			isa = PBXGroup;
 			children = (
-				74C2B20D1AF024C200A4D4C2 /* YKWebPImage.h */,
 				74C2B20B1AF024C200A4D4C2 /* Supporting Files */,
 				74D62C221AF4CFA500D3F055 /* UIImage+YKWebPImage.h */,
 				74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */,
@@ -150,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D62C241AF4CFA500D3F055 /* UIImage+YKWebPImage.h in Headers */,
-				74C2B20E1AF024C200A4D4C2 /* YKWebPImage.h in Headers */,
 				74D62C2A1AF65BE600D3F055 /* YKSwizzle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
