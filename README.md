@@ -1,7 +1,7 @@
 YKWebPImage
 ===========
 
-Plug-and-play WebP Image support for iOS. Compatibile with many other image fetch and caching libraries, including [Hanake](https://github.com/Haneke) 
+Plug-and-play WebP Image support for iOS. Compatibile with many other image fetch and caching libraries, including [Haneke](https://github.com/Haneke) 
 
 * Works transparently with Swift
 
