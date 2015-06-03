@@ -106,7 +106,7 @@ static void releaseData(void *info, const void *data, size_t size) {
 
 #pragma mark Init Methods
 - (instancetype)initWithData_yk:(NSData *)data {
-    UIImage *image = [UIImage webPImageFromData:data scale:1.0];
+    UIImage *image = [UIImage webPImageFromData:data scale:[[UIScreen mainScreen] scale]];
     if (image) {
         self = image;
         return image;
@@ -127,7 +127,7 @@ static void releaseData(void *info, const void *data, size_t size) {
 - (instancetype)initWithContentsOfFile_yk:(NSString *)path {
     NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:nil];
     if (data) {
-        UIImage *image = [UIImage webPImageFromData:data scale:1.0];
+        UIImage *image = [UIImage webPImageFromData:data scale:[[UIScreen mainScreen] scale]];
         if (image) {
             self = image;
             return image;
@@ -143,7 +143,7 @@ compatibleWithTraitCollection:(UITraitCollection *)traitCollection {
     if (path) {
         NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:nil];
         if (data) {
-            UIImage *image = [UIImage webPImageFromData:data scale:1.0];
+            UIImage *image = [UIImage webPImageFromData:data scale:[[UIScreen mainScreen] scale]];
             if (image) {
                 return image;
             }
