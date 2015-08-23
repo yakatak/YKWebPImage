@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.author                = { "Yakatak" => "support@yakatak.com" }
   s.social_media_url      = "https://twitter.com/yakatak"
   s.ios.deployment_target = '8.0'
-  s.source                = { :git => "https://github.com/yakatak/YKWebPImage.git", :tag => "v0.0.2" }
+  s.source                = { :git => "https://github.com/yakatak/YKWebPImage.git", :tag => "v0.0.3" }
   s.source_files          = 'YKWebPImage/**/*.{m,h}'
   s.requires_arc          = true
   s.vendored_frameworks   = 'WebP.framework'
