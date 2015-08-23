@@ -14,7 +14,7 @@
 		74D62C251AF4CFA500D3F055 /* UIImage+YKWebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */; };
 		74D62C291AF65BE600D3F055 /* YKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C271AF65BE600D3F055 /* YKSwizzle.m */; };
 		74D62C2A1AF65BE600D3F055 /* YKSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D62C281AF65BE600D3F055 /* YKSwizzle.h */; };
-		AD88754A06E2417AC833F37E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B123E7AA7D5EA32A412A116 /* libPods.a */; };
+		BC99961F59A43F9BC7630F97 /* Pods_YKWebPImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D38414B409AD07363A43B2 /* Pods-YKWebPImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKWebPImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YKWebPImage/Pods-YKWebPImage.debug.xcconfig"; sourceTree = "<group>"; };
 		0B123E7AA7D5EA32A412A116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745774FC1AFF623500416C44 /* TestImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestImages; path = ../../YKWebPImage/YKWebPImageTests/TestImages; sourceTree = "<group>"; };
 		74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B20C1AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,8 +41,7 @@
 		74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YKWebPImage.m"; sourceTree = "<group>"; };
 		74D62C271AF65BE600D3F055 /* YKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSwizzle.m; sourceTree = "<group>"; };
 		74D62C281AF65BE600D3F055 /* YKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSwizzle.h; sourceTree = "<group>"; };
-		900489BD8D3AD121DFA639C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B68839558AA88B69628137DD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F4E2D9241E6B444CB82A08B7 /* Pods-YKWebPImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKWebPImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKWebPImage/Pods-YKWebPImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD88754A06E2417AC833F37E /* libPods.a in Frameworks */,
+				BC99961F59A43F9BC7630F97 /* Pods_YKWebPImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0B123E7AA7D5EA32A412A116 /* libPods.a */,
+				57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,8 +76,8 @@
 		6A89EBCC8DB6A0F2C0E785F2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				900489BD8D3AD121DFA639C9 /* Pods.debug.xcconfig */,
-				B68839558AA88B69628137DD /* Pods.release.xcconfig */,
+				09D38414B409AD07363A43B2 /* Pods-YKWebPImage.debug.xcconfig */,
+				F4E2D9241E6B444CB82A08B7 /* Pods-YKWebPImage.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -198,7 +200,7 @@
 		74C2B1FD1AF01EA600A4D4C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 				TargetAttributes = {
 					74C2B2071AF024C200A4D4C2 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -257,7 +259,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YKWebPImage/Pods-YKWebPImage-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54DEDABF0BB86316153A4193 /* Check Pods Manifest.lock */ = {
@@ -309,18 +311,47 @@
 		74C2B2011AF01EA600A4D4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				ONLY_ACTIVE_ARCH = YES;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
 			};
 			name = Debug;
 		};
 		74C2B2021AF01EA600A4D4C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
 			};
 			name = Release;
 		};
 		74C2B21C1AF024C200A4D4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 900489BD8D3AD121DFA639C9 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 09D38414B409AD07363A43B2 /* Pods-YKWebPImage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -377,7 +408,7 @@
 		};
 		74C2B21D1AF024C200A4D4C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B68839558AA88B69628137DD /* Pods.release.xcconfig */;
+			baseConfigurationReference = F4E2D9241E6B444CB82A08B7 /* Pods-YKWebPImage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

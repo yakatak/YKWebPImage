@@ -10,12 +10,15 @@ build/
 !default.perspectivev3
 xcuserdata
 *.xccheckout
+*.xcworkspace
 *.moved-aside
 DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+Pods
 .DS_Store
 output
+Podfile.lock
 /*/Pods/
 /*/Example/Pods
