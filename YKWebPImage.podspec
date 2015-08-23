@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.vendored_frameworks   = 'WebP.framework'
   s.summary               = "Plug and Play WebP support for iOS"
-  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) YK_POD=1' }
   s.description  = <<-DESC
 	  # YKWebPImage
 	  Plug and Play WebP Image support for iOS. It's as simple as installing the Pod. Under the hood, this library swizzles the init methods of `UIImage` and adds a lightweight header scan of the image data to check for WebP format, then decodes if a positive match is found.
