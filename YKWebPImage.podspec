@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "YKWebPImage"
-  s.version               = "0.0.2"
+  s.version               = "0.0.3"
   s.homepage              = "https://github.com/yakatak/YKWebPImage"
   s.license               = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author                = { "Yakatak" => "support@yakatak.com" }
