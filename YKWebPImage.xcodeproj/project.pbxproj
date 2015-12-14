@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31E1C2751175714E361AE2EF /* Pods_YKWebPImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE2466F687320143878AB6C /* Pods_YKWebPImage.framework */; };
 		745774FD1AFF623500416C44 /* TestImages in Resources */ = {isa = PBXBuildFile; fileRef = 745774FC1AFF623500416C44 /* TestImages */; };
 		74C2B2141AF024C200A4D4C2 /* YKWebPImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */; };
 		74C2B21B1AF024C200A4D4C2 /* YKWebPImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2B21A1AF024C200A4D4C2 /* YKWebPImageTests.m */; };
+		74D475F21C1EE3EA0088EC2A /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D475F11C1EE3EA0088EC2A /* WebP.framework */; };
 		74D62C241AF4CFA500D3F055 /* UIImage+YKWebPImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D62C221AF4CFA500D3F055 /* UIImage+YKWebPImage.h */; };
 		74D62C251AF4CFA500D3F055 /* UIImage+YKWebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */; };
 		74D62C291AF65BE600D3F055 /* YKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D62C271AF65BE600D3F055 /* YKSwizzle.m */; };
 		74D62C2A1AF65BE600D3F055 /* YKSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D62C281AF65BE600D3F055 /* YKSwizzle.h */; };
-		BC99961F59A43F9BC7630F97 /* Pods_YKWebPImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +30,18 @@
 
 /* Begin PBXFileReference section */
 		09D38414B409AD07363A43B2 /* Pods-YKWebPImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKWebPImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YKWebPImage/Pods-YKWebPImage.debug.xcconfig"; sourceTree = "<group>"; };
-		0B123E7AA7D5EA32A412A116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745774FC1AFF623500416C44 /* TestImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestImages; path = ../../YKWebPImage/YKWebPImageTests/TestImages; sourceTree = "<group>"; };
 		74C2B2081AF024C200A4D4C2 /* YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B20C1AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C2B2131AF024C200A4D4C2 /* YKWebPImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKWebPImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2B2191AF024C200A4D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C2B21A1AF024C200A4D4C2 /* YKWebPImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKWebPImageTests.m; sourceTree = "<group>"; };
+		74D475F11C1EE3EA0088EC2A /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		74D62C221AF4CFA500D3F055 /* UIImage+YKWebPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YKWebPImage.h"; sourceTree = "<group>"; };
 		74D62C231AF4CFA500D3F055 /* UIImage+YKWebPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YKWebPImage.m"; sourceTree = "<group>"; };
 		74D62C271AF65BE600D3F055 /* YKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSwizzle.m; sourceTree = "<group>"; };
 		74D62C281AF65BE600D3F055 /* YKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSwizzle.h; sourceTree = "<group>"; };
+		DBE2466F687320143878AB6C /* Pods_YKWebPImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKWebPImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E2D9241E6B444CB82A08B7 /* Pods-YKWebPImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKWebPImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKWebPImage/Pods-YKWebPImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC99961F59A43F9BC7630F97 /* Pods_YKWebPImage.framework in Frameworks */,
+				74D475F21C1EE3EA0088EC2A /* WebP.framework in Frameworks */,
+				31E1C2751175714E361AE2EF /* Pods_YKWebPImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +69,8 @@
 		5DB923A1E1CFF893FAB1189C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B123E7AA7D5EA32A412A116 /* libPods.a */,
-				57A2BCCD4F2A4D4B794DD955 /* Pods_YKWebPImage.framework */,
+				74D475F11C1EE3EA0088EC2A /* WebP.framework */,
+				DBE2466F687320143878AB6C /* Pods_YKWebPImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -376,6 +378,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,6 +440,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
